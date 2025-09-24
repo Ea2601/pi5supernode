@@ -1,0 +1,76 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "errors": 0,
+  "successRate": 100,
+  "results": [
+    {
+      "test": "Main Dashboard Page",
+      "status": "PASS",
+      "loadTime": "142ms",
+      "size": "5.27KB",
+      "analysis": {
+        "hasReact": true,
+        "hasVite": true,
+        "hasTailwind": false,
+        "components": [],
+        "scripts": [
+          "/assets/index-BwRniV5u.js"
+        ],
+        "stylesheets": [
+          "/assets/index-CEYJaLkI.css"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "test": "Script: /assets/index-BwRniV5u.js",
+      "status": "PASS",
+      "loadTime": "162ms",
+      "size": "640.47KB",
+      "analysis": {
+        "hasReact": false,
+        "hasVite": false,
+        "hasTailwind": false,
+        "components": [
+          "TrafficRules",
+          "Notifications",
+          "VPN",
+          "Dashboard",
+          "quick-setup"
+        ],
+        "scripts": [],
+        "stylesheets": [],
+        "errors": []
+      }
+    },
+    {
+      "test": "Stylesheet: /assets/index-CEYJaLkI.css",
+      "status": "PASS",
+      "loadTime": "64ms",
+      "size": "38.84KB",
+      "analysis": {
+        "hasReact": false,
+        "hasVite": false,
+        "hasTailwind": true,
+        "components": [],
+        "scripts": [],
+        "stylesheets": [],
+        "errors": []
+      }
+    },
+    {
+      "test": "Supabase Database Connection",
+      "status": "PASS",
+      "statusCode": 200,
+      "responseSize": 278
+    },
+    {
+      "test": "Edge Function: get-dynamic-options",
+      "status": "PASS",
+      "statusCode": 200,
+      "responseSize": 10389
+    }
+  ],
+  "errorDetails": []
+}

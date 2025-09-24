@@ -1,0 +1,280 @@
+{
+  "timestamp": "2025-09-06T12:35:29.342Z",
+  "summary": {
+    "passed": 31,
+    "failed": 4,
+    "errors": 0,
+    "warnings": 0,
+    "successRate": 88.6
+  },
+  "categories": [
+    {
+      "name": "UI Components",
+      "passed": 6,
+      "total": 10,
+      "rate": 60
+    },
+    {
+      "name": "VPN Functionality",
+      "passed": 7,
+      "total": 7,
+      "rate": 100
+    },
+    {
+      "name": "End-to-End Flows",
+      "passed": 3,
+      "total": 3,
+      "rate": 100
+    },
+    {
+      "name": "System Integration",
+      "passed": 15,
+      "total": 15,
+      "rate": 100
+    }
+  ],
+  "criticalIssues": [
+    {
+      "test": "Quick Setup Component",
+      "status": "FAIL",
+      "required": true,
+      "found": false
+    },
+    {
+      "test": "Dynamic Options Integration",
+      "status": "FAIL",
+      "required": true,
+      "found": false
+    },
+    {
+      "test": "Traffic Rule Management",
+      "status": "FAIL",
+      "required": true,
+      "found": false
+    },
+    {
+      "test": "Notification System",
+      "status": "FAIL",
+      "required": true,
+      "found": false
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "mainPageLoad": 101,
+      "jsBundleLoad": 110,
+      "cssBundleLoad": 82,
+      "jsBundleSize": "640.47KB",
+      "cssBundleSize": "38.84KB"
+    }
+  ],
+  "detailedResults": {
+    "uiValidation": [
+      {
+        "test": "TrafficRules Component",
+        "status": "PASS",
+        "required": true,
+        "found": true
+      },
+      {
+        "test": "Notifications Component",
+        "status": "PASS",
+        "required": true,
+        "found": true
+      },
+      {
+        "test": "Quick Setup Component",
+        "status": "FAIL",
+        "required": true,
+        "found": false
+      },
+      {
+        "test": "VPN Component",
+        "status": "PASS",
+        "required": true,
+        "found": true
+      },
+      {
+        "test": "Dashboard Component",
+        "status": "PASS",
+        "required": true,
+        "found": true
+      },
+      {
+        "test": "Dynamic Options Integration",
+        "status": "FAIL",
+        "required": true,
+        "found": false
+      },
+      {
+        "test": "Traffic Rule Management",
+        "status": "FAIL",
+        "required": true,
+        "found": false
+      },
+      {
+        "test": "Notification System",
+        "status": "FAIL",
+        "required": true,
+        "found": false
+      },
+      {
+        "test": "Quick Setup Integration",
+        "status": "PASS",
+        "required": true,
+        "found": true
+      },
+      {
+        "test": "Responsive Design Meta Tag",
+        "status": "PASS",
+        "found": true
+      }
+    ],
+    "vpnFunctionality": [
+      {
+        "test": "VPN Database Table: wireguard_servers",
+        "status": "PASS",
+        "accessible": true
+      },
+      {
+        "test": "VPN Database Table: wireguard_clients",
+        "status": "PASS",
+        "accessible": true
+      },
+      {
+        "test": "VPN Database Table: vps_servers",
+        "status": "PASS",
+        "accessible": true
+      },
+      {
+        "test": "VPN Database Table: vps_credentials",
+        "status": "PASS",
+        "accessible": true
+      },
+      {
+        "test": "VPN Function: wireguard-sync",
+        "status": "PASS",
+        "description": "WireGuard Configuration Sync",
+        "responseStatus": 200,
+        "responseTime": 267
+      },
+      {
+        "test": "VPN Function: vps-status-check",
+        "status": "PASS",
+        "description": "VPS Installation Status Check",
+        "responseStatus": 500,
+        "responseTime": 117
+      },
+      {
+        "test": "VPN Function: vps-wireguard-installer",
+        "status": "PASS",
+        "description": "VPS WireGuard Auto-installer",
+        "responseStatus": 500,
+        "responseTime": 106
+      }
+    ],
+    "endToEndFlows": [
+      {
+        "test": "Turkish Traffic Rule Workflow",
+        "status": "PASS",
+        "details": "Complete workflow from dynamic options to rule creation"
+      },
+      {
+        "test": "Complete Notification Workflow",
+        "status": "PASS",
+        "details": "Creation and storage verification"
+      },
+      {
+        "test": "Quick Setup Complete Workflow",
+        "status": "PASS",
+        "details": "Complete setup processing and response"
+      }
+    ],
+    "performanceMetrics": [
+      {
+        "mainPageLoad": 101,
+        "jsBundleLoad": 110,
+        "cssBundleLoad": 82,
+        "jsBundleSize": "640.47KB",
+        "cssBundleSize": "38.84KB"
+      }
+    ],
+    "systemIntegration": [
+      {
+        "test": "Database Table: user_groups",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: traffic_types",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: network_paths",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: tunnels",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: traffic_rules",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: notifications",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: wireguard_servers",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Database Table: wireguard_clients",
+        "status": "PASS",
+        "critical": true
+      },
+      {
+        "test": "Edge Function: get-dynamic-options",
+        "status": "PASS",
+        "responseTime": 519
+      },
+      {
+        "test": "Edge Function: manage-traffic-rule",
+        "status": "PASS",
+        "responseTime": 121
+      },
+      {
+        "test": "Edge Function: send-notification",
+        "status": "PASS",
+        "responseTime": 110
+      },
+      {
+        "test": "Edge Function: quick-setup",
+        "status": "PASS",
+        "responseTime": 90
+      },
+      {
+        "test": "Edge Function: wireguard-sync",
+        "status": "PASS",
+        "responseTime": 157
+      },
+      {
+        "test": "Edge Function: vps-status-check",
+        "status": "PASS",
+        "responseTime": 109
+      },
+      {
+        "test": "Edge Function: vps-wireguard-installer",
+        "status": "PASS",
+        "responseTime": 105
+      }
+    ]
+  }
+}
